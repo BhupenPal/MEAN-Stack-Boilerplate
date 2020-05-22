@@ -1,0 +1,37 @@
+$primary: #017ACF;
+
+.left-handler {
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    span {
+        color: green;
+    }
+}
+
+.right-handler {
+    width: 60%;
+
+    .bar {
+        border-radius: 10px;
+        height: 4px;
+        width: 55%;
+        background: lighten(gray, 20%);
+
+        #progress {
+            width: 0;
+            box-shadow: 0 0 2px 0 $primary;
+            background: $primary;
+            transition: 0.08s;
+        }
+    }
+
+    #response {
+        border: 1px solid black;
+        background: lighten(gray, 45%);
+        width: 55%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+}

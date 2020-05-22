@@ -1,0 +1,30 @@
+{
+  "name": "mean-stack-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "front": "cd client && ng serve -o --proxy-config proxy.conf.json",
+    "back": "cd server && nodemon server.js",
+    "dev": "concurrently \"npm run front\" \"npm run back\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhupenPal/MEAN-Stack-Boilerplate.git"
+  },
+  "author": "Bhupen Pal",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/BhupenPal/MEAN-Stack-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/BhupenPal/MEAN-Stack-Boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.15"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "install": "^0.13.0"
+  }
+}

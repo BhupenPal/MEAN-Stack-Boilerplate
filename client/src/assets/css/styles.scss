@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito.ttf');
+}
+
+$primary: #017ACF;
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito';
+    font-size: 18px;
+    min-height: 100%;
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: $primary;
+    padding: 1.5em 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav{
+        float: right;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+
+        li a {
+            padding: 1.5em;
+
+                &:hover {
+                    background: darken($primary, 10%);
+                }
+        }
+    }
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto; 
+
+    app-home {
+        display: flex;
+        height: 100%;
+    }
+
+    app-minion {
+        display: flex;
+        height: 100%;
+    }
+}
+
+footer {
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary;
+    color: white;
+
+    img {
+        height: 20px;
+        width: 20px;
+        padding: 0 10px;
+        animation: beat 1.2s;
+        animation-iteration-count: 2;
+    }
+}
+
+@keyframes beat {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

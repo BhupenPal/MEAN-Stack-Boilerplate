@@ -1,0 +1,25 @@
+<div class="left-handler">
+    <div>
+        <h1>WELCOME!</h1>
+        <h2>Yayyy it's working... Let's get started...</h2>
+    </div>
+    <div>
+        <h3>1. Test Backend</h3>
+        <h4>For this to work make sure the proxy PORT/URL present in <span>'client/proxy.conf.json'</span> matches your backend configuration.</h4>
+        <button (click)="ApiCheck()">Test Connection</button>
+    </div>
+    <div>
+        <h3>2. You're good to go</h3>
+    </div>
+</div>
+<div class="right-handler">
+    <div class="bar">
+        <div id="progress" class="bar"></div>
+    </div>
+    <div>
+        <h3>Response</h3>
+        <div id="response">
+            <pre id="jcode"></pre>
+        </div>
+    </div>
+</div>
